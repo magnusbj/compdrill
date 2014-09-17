@@ -1,17 +1,13 @@
 {
  "name": "app",
  "description": "app",
+ "main": "app.js",
  "version": "0.0.1",
  "private": true,
  "dependencies": 
  {
-  "express": "3.2.0",
-  "jade": "*",
-  "stylus": "*",
-  "nib": "*",
-  "mongodb": "*",
-  "mongoose": "*",
-  "validator": "*",
-  "express-mailer": "*"
+  "express": "4.x",
+  "ejs": "0.7.1"
+
  }
 }

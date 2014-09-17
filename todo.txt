@@ -1,1 +1,0 @@
-Need to add heroku toolbelt to startup, as well as install nodejs and npm. Found a way to use nodejs, not node. The rlwrap is a useful addon, but I can't make it work

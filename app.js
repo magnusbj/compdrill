@@ -41,7 +41,7 @@ app.get('/post/:slug', function(req,res, next){
 });
 
 // start the app
-app.listen(8080);
+app.listen(app.get('port'));
 //http.createServer(app).listen(app.get('port'), function(){
 //  console.log("Listening on " + app.get('port'));
 //});

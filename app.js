@@ -5,27 +5,38 @@
 
 var express = require('express');
 var fs = require('fs');
-var http = require('http');
 
 var app = express();
+//app.set('views', __dirname + '/views/')
 app.set('views', __dirname + '/jumbo/')
-//app.set('views', __dirname + '/node_modules/bootstrap/docs/examples/jumbotron/')
+
 app.set('view engine', 'ejs');
 app.set('port', process.env.PORT || 8080);
 
-console.log(app.get('views'));
+app.locals.title= 'Welcommings';
+
+app.all('*', function(req, res, next){
+  fs.readFile('posts.json', function(err, data){
+    res.locals.posts = JSON.parse(data);
+      console.log(res.locals.posts.slug);
+    next();
+  });
+});
 
 app.get('/', function(request, response){
-//  http.render('index.html');
   response.send(fs.readFileSync(app.get('views') +"index.html").toString());
-//  response.send(fs.readFileSync("index.html").toString());
-  
-//    response.setHeader("Content-type", "text/html");
-  //  response.end(text);
-//    });
   });
 
-// start the app
-http.createServer(app).listen(app.get('port'), function(){
-  console.log("Listening on " + app.get('port'));
+app.get('/:slug', function(req,res, next){
+  res.locals.posts.forEach(function(post){
+      if (req.post.slug === post.slug){
+	  res.render('index.ejs', {post: post});
+	  }
+      })
 });
+
+// start the app
+app.listen(8080);
+//http.createServer(app).listen(app.get('port'), function(){
+//  console.log("Listening on " + app.get('port'));
+//});

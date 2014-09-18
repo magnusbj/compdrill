@@ -1,0 +1,7 @@
+Create general text that is added to html page with keyword
+Use carousel from bootstrap
+Figure out how to change colors in bootstrap css
+Add contact, projectname
+Introduce fundraiser, bitcoin?
+Explain primary challenges with steel and introduce composites
+Highlight money savings with composites

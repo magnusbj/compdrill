@@ -18,20 +18,25 @@ app.locals.title= 'Welcommings';
 app.all('*', function(req, res, next){
   fs.readFile('posts.json', function(err, data){
     res.locals.posts = JSON.parse(data);
-      console.log(res.locals.posts.slug);
+//      console.log(res.locals.posts);
     next();
   });
 });
 
 app.get('/', function(request, response){
-  response.send(fs.readFileSync(app.get('views') +"index.html").toString());
-  });
+    fs.readFile('./texts/slogan.txt', function (err, data){
+    response.render('index.ejs', { headline: 'Composite Drilling', content1: data});
+    });
+});
 
-app.get('/:slug', function(req,res, next){
-  res.locals.posts.forEach(function(post){
-      if (req.post.slug === post.slug){
-	  res.render('index.ejs', {post: post});
+app.get('/post/:slug', function(req,res, next){
+    console.log("Slug recorded: " + req.params.slug);
+    res.locals.posts.forEach(function(post){
+      if (req.params.slug === post.slug){
+	  console.log("Success, matched slug with input");
+	  res.render('index.html', {post: post});
 	  }
+	next();
       })
 });
 

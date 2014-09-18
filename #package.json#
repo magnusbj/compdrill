@@ -1,0 +1,14 @@
+{
+ "name": "app",
+ "description": "app",
+ "main": "app.js",
+ "version": "0.0.1",
+ "private": true,
+ "dependencies": 
+ {
+  "express": "4.x",
+  "ejs": "0.7.1"
+  
+
+ }
+}

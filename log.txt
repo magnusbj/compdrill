@@ -1,0 +1,103 @@
+2014-09-18T06:57:57.271773+00:00 heroku[web.1]: State changed from starting to up
+2014-09-18T06:57:58.226661+00:00 heroku[router]: at=info method=GET path="/" host=magnusbj-s-compositedrilling.herokuapp.com request_id=5d4c3ddb-8579-415e-81f4-acffb73c0cd6 fwd="85.200.5.102" dyno=web.1 connect=8ms service=17ms status=200 bytes=193
+2014-09-18T06:58:19.182162+00:00 heroku[router]: at=info method=GET path="/" host=www.compositedrilling.com request_id=372fa9db-a8cc-4bd7-b535-2eae3d964bfb fwd="85.200.5.102" dyno=web.1 connect=0ms service=2ms status=200 bytes=193
+2014-09-18T06:58:19.363385+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=www.compositedrilling.com request_id=80d3b240-4ea1-4b5a-a82f-56f9f896eee6 fwd="85.200.5.102" dyno=web.1 connect=0ms service=2ms status=404 bytes=189
+2014-09-18T06:58:26.914292+00:00 heroku[router]: at=info method=GET path="/" host=magnusbj-s-compositedrilling.herokuapp.com request_id=0e5ac822-4651-47ac-b00e-639d45c8849b fwd="85.200.5.102" dyno=web.1 connect=0ms service=5ms status=304 bytes=131
+2014-09-18T07:13:53.706901+00:00 heroku[api]: Deploy ddbb1c4 by magnusbj@gmail.com
+2014-09-18T07:13:53.706980+00:00 heroku[api]: Release v4 created by magnusbj@gmail.com
+2014-09-18T07:13:53+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-09-18T07:13:55.431331+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=magnusbj-s-compositedrilling.herokuapp.com request_id=d572c314-650a-4a0c-adb2-692f4ece5370 fwd="54.87.128.104" dyno= connect= service= status=503 bytes=
+2014-09-18T07:13:55.935217+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-09-18T07:13:56.436750+00:00 app[web.1]: Error waiting for process to terminate: No child processes
+2014-09-18T07:15:
+02.924649+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=magnusbj-s-compositedrilling.herokuapp.com request_id=7c259169-e24a-441d-86ba-bb19c388b203 fwd="85.200.5.102" dyno= connect= service= status=503 bytes=
+2014-09-18T07:15:10.991997+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=magnusbj-s-compositedrilling.herokuapp.com request_id=e7ae3700-fdeb-433d-be65-cf61f8606416 fwd="85.200.5.102" dyno= connect= service= status=503 bytes=
+2014-09-18T07:15:12.579130+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=magnusbj-s-compositedrilling.herokuapp.com request_id=33eb7f94-1165-427a-bc10-08ae7a151fa2 fwd="85.200.5.102" dyno= connect= service= status=503 bytes=
+2014-09-18T07:21:31+00:00 heroku[slug-compiler]: Slug compilation started
+2014-09-18T07:21:56.413919+00:00 heroku[api]: Deploy 2cf09f5 by magnusbj@gmail.com
+2014-09-18T07:21:56.413980+00:00 heroku[api]: Release v5 created by magnusbj@gmail.com
+2014-09-18T07:21:56+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-09-18T07:22:00.923911+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=magnusbj-s-compositedrilling.herokuapp.com request_id=6424e438-8936-47c4-8f95-41271960024e fwd="54.87.128.104" dyno= connect= service= status=503 bytes=
+2014-09-18T07:22:42+00:00 heroku[slug-compiler]: Slug compilation started
+2014-09-18T07:23:19+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-09-18T07:23:19.846744+00:00 heroku[api]: Deploy 892c617 by magnusbj@gmail.com
+2014-09-18T07:23:19.846821+00:00 heroku[api]: Release v6 created by magnusbj@gmail.com
+2014-09-18T07:23:21.044758+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=magnusbj-s-compositedrilling.herokuapp.com request_id=bcb80003-2822-49b6-9e23-bb22ba9da139 fwd="54.87.128.104" dyno= connect= service= status=503 bytes=
+2014-09-18T07:23:47.744932+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=magnusbj-s-compositedrilling.herokuapp.com request_id=f5f649ba-dc8c-4772-9ed6-441f8938f4db fwd="85.200.5.102" dyno= connect= service= status=503 bytes=
+2014-09-18T07:25:06+00:00 heroku[slug-compiler]: Slug compilation started
+2014-09-18T07:25:38+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-09-18T07:25:38.026131+00:00 heroku[api]: Deploy 5a7565a by magnusbj@gmail.com
+2014-09-18T07:25:38.026184+00:00 heroku[api]: Release v7 created by magnusbj@gmail.com
+2014-09-18T07:25:40.615621+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=magnusbj-s-compositedrilling.herokuapp.com request_id=03058fed-25ea-42c3-a894-40f301267224 fwd="54.87.128.104" dyno= connect= service= status=503 bytes=
+2014-09-18T07:26:01.096782+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=magnusbj-s-compositedrilling.herokuapp.com request_id=b740f8fb-0cfe-42e1-bdda-e71d0776c5ab fwd="85.200.5.102" dyno= connect= service= status=503 bytes=
+2014-09-18T07:33:57+00:00 heroku[slug-compiler]: Slug compilation started
+2014-09-18T07:34:24.006545+00:00 heroku[api]: Release v8 created by magnusbj@gmail.com
+2014-09-18T07:34:24.006545+00:00 heroku[api]: Deploy 98dbb01 by magnusbj@gmail.com
+2014-09-18T07:34:24+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-09-18T07:34:25.224200+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=magnusbj-s-compositedrilling.herokuapp.com request_id=74535b34-c943-4913-879e-eccf1d25dfd8 fwd="54.87.128.104" dyno= connect= service= status=503 bytes=
+2014-09-18T07:34:33.113019+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=magnusbj-s-compositedrilling.herokuapp.com request_id=4f7dfa87-7e78-4a53-a599-9025f83e72cb fwd="85.200.5.102" dyno= connect= service= status=503 bytes=
+2014-09-18T07:35:03.388267+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=magnusbj-s-compositedrilling.herokuapp.com request_id=076ebadd-212f-45f0-b5a0-77df80d4314b fwd="85.200.5.102" dyno= connect= service= status=503 bytes=
+2014-09-18T07:37:09.579482+00:00 heroku[web.1]: Starting process with command `node anew.js`
+2014-09-18T07:37:10.616189+00:00 app[web.1]: Listening on 35924
+2014-09-18T07:37:10.608422+00:00 app[web.1]: /app/views/
+2014-09-18T07:37:10.999100+00:00 heroku[web.1]: State changed from starting to up
+2014-09-18T07:37:15.077953+00:00 heroku[router]: at=info method=GET path="/" host=magnusbj-s-compositedrilling.herokuapp.com request_id=4734247b-4c4e-48bb-9677-ff1a82fde6bc fwd="85.200.5.102" dyno=web.1 connect=1ms service=17ms status=200 bytes=3525
+2014-09-18T07:37:15.248069+00:00 heroku[router]: at=info method=GET path="/bootstrap.css" host=magnusbj-s-compositedrilling.herokuapp.com request_id=79941211-49d9-45d7-af25-58f046454870 fwd="85.200.5.102" dyno=web.1 connect=1ms service=6ms status=404 bytes=224
+2014-09-18T07:37:15.387451+00:00 heroku[router]: at=info method=GET path="/bootstrap.min.css" host=magnusbj-s-compositedrilling.herokuapp.com request_id=88f0c9aa-e9cd-4f43-ac63-7ea66e8b4795 fwd="85.200.5.102" dyno=web.1 connect=1ms service=6ms status=404 bytes=228
+2014-09-18T07:37:15.391616+00:00 heroku[router]: at=info method=GET path="/starter-template.css" host=magnusbj-s-compositedrilling.herokuapp.com request_id=dfbf44d3-39db-435d-8aa4-380b639ee603 fwd="85.200.5.102" dyno=web.1 connect=1ms service=4ms status=404 bytes=231
+2014-09-18T07:37:15.388576+00:00 heroku[router]: at=info method=GET path="/bootstrap.min.js" host=magnusbj-s-compositedrilling.herokuapp.com request_id=084132e4-0c46-4c5c-b1bf-2ac4ffcc17b9 fwd="85.200.5.102" dyno=web.1 connect=1ms service=6ms status=404 bytes=227
+2014-09-18T07:37:15.402633+00:00 heroku[router]: at=info method=GET path="/public/assets/js/ie10-viewport-bug-workaround.js" host=magnusbj-s-compositedrilling.herokuapp.com request_id=60e2efdb-ce48-4df1-9212-2d850a3794e2 fwd="85.200.5.102" dyno=web.1 connect=1ms service=5ms status=404 bytes=259
+2014-09-18T07:58:18+00:00 heroku[slug-compiler]: Slug compilation started
+2014-09-18T07:58:41.962525+00:00 heroku[api]: Deploy 39e5bb6 by magnusbj@gmail.com
+2014-09-18T07:58:41.962582+00:00 heroku[api]: Release v9 created by magnusbj@gmail.com
+2014-09-18T07:58:42.830196+00:00 heroku[web.1]: State changed from up to starting
+2014-09-18T07:58:44.914893+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-09-18T07:58:46.227576+00:00 heroku[web.1]: Process exited with status 143
+2014-09-18T07:58:46.622525+00:00 heroku[web.1]: Starting process with command `node app.js`
+2014-09-18T07:58:47.740551+00:00 app[web.1]: /app/jumbo/
+2014-09-18T07:58:47.751927+00:00 app[web.1]: Listening on 33193
+2014-09-18T07:58:4
+8.304687+00:00 heroku[web.1]: State changed from starting to up
+2014-09-18T07:58:49.532079+00:00 heroku[router]: at=info method=GET path="/" host=magnusbj-s-compositedrilling.herokuapp.com request_id=9c3e3266-8335-46a2-a84b-946ade6de555 fwd="54.87.128.104" dyno=web.1 connect=0ms service=22ms status=200 bytes=5358
+2014-09-18T07:58:56.937294+00:00 heroku[router]: at=info method=GET path="/jumbotron.css" host=magnusbj-s-compositedrilling.herokuapp.com request_id=dcf8428c-d04a-482e-bf9a-e56902963b2c fwd="85.200.5.102" dyno=web.1 connect=1ms service=3ms status=404 bytes=224
+2014-09-18T07:58:56.947239+00:00 heroku[router]: at=info method=GET path="/public/assets/js/ie10-viewport-bug-workaround.js" host=magnusbj-s-compositedrilling.herokuapp.com request_id=4a09f87c-6077-475d-a995-5021ee1fb455 fwd="85.200.5.102" dyno=web.1 connect=2ms service=3ms status=404 bytes=259
+2014-09-18T07:58:56.941712+00:00 heroku[router]: at=info method=GET path="/public/dist/js/bootstrap.min.js" host=magnusbj-s-compositedrilling.herokuapp.com request_id=1d0a301d-fa12-4fe7-91ec-f025d96d1b47 fwd="85.200.5.102" dyno=web.1 connect=1ms service=3ms status=404 bytes=242
+2014-09-18T07:58:56.942847+00:00 heroku[router]: at=info method=GET path="/public/assets/js/ie-emulation-modes-warning.js" host=magnusbj-s-compositedrilling.herokuapp.com request_id=1b1940c9-94cb-4a0a-8c61-a17a3dc9b67a fwd="85.200.5.102" dyno=web.1 connect=2ms service=4ms status=404 bytes=257
+2014-09-18T07:59:08.197129+00:00 heroku[router]: at=info method=GET path="/" host=www.compositedrilling.com request_id=20c78a62-62b7-47a1-aef5-7af53d290ba6 fwd="85.200.5.102" dyno=web.1 connect=2ms service=2ms status=200 bytes=5358
+2014-09-18T07:59:08.500694+00:00 heroku[router]: at=info method=GET path="/public/assets/js/ie-emulation-modes-warning.js" host=www.compositedrilling.com request_id=fc9cda32-3195-40cb-bb58-066e2fb2f6a3 fwd="85.200.5.102" dyno=web.1 connect=3ms service=2ms status=404 bytes=257
+2014-09-18T07:59:08.371244+00:00 heroku[router]: at=info method=GET path="/public/dist/css/bootstrap.min.css" host=www.compositedrilling.com request_id=50e5fe5a-9687-41c7-9b6e-4e9b5c1f6011 fwd="85.200.5.102" dyno=web.1 connect=1ms service=2ms status=404 bytes=244
+2014-09-18T07:59:08.496578+00:00 heroku[router]: at=info method=GET path="/public/dist/js/bootstrap.min.js" host=www.compositedrilling.com request_id=fad8bfbf-00cb-434f-8048-9cd0614dbef2 fwd="85.200.5.102" dyno=web.1 connect=1ms service=2ms status=404 bytes=242
+2014-09-18T07:59:08.501787+00:00 heroku[router]: at=info method=GET path="/public/assets/js/ie10-viewport-bug-workaround.js" host=www.compositedrilling.com request_id=66083c1f-aacf-4854-86ae-dcf5d5c004cc fwd="85.200.5.102" dyno=web.1 connect=5ms service=4ms status=404 bytes=259
+2014-09-18T07:59:08.375902+00:00 heroku[router]: at=info method=GET path="/jumbotron.css" host=www.compositedrilling.com request_id=cc06a0eb-8b51-4295-b6de-7bce029e8832 fwd="85.200.5.102" dyno=web.1 connect=2ms service=2ms status=404 bytes=224
+2014-09-18T09:03:13.976995+00:00 heroku[web.1]: State changed from up to down
+2014-09-18T09:03:13.976174+00:00 heroku[web.1]: Idling
+2014-09-18T09:03:16.073370+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-09-18T09:03:17.212565+00:00 heroku[web.1]: Process exited with status 143
+2014-09-18T19:21:06+00:00 heroku[slug-compiler]: Slug compilation started
+2014-09-18T19:21:10+00:00 heroku[slug-compiler]: Slug compilation failed: failed to compile Node.js app
+2014-09-18T19:22:41+00:00 heroku[slug-compiler]: Slug compilation started
+2014-09-18T19:22:43+00:00 heroku[slug-compiler]: Slug compilation failed: failed to compile Node.js app
+2014-09-18T19:23:32+00:00 heroku[slug-compiler]: Slug compilation failed: failed to compile Node.js app
+2014-09-18T19:23:55+00:00 heroku[slug-compiler]: Slug compilation started
+2014-09-18T19:23:57+00:00 heroku[slug-compiler]: Slug compilation failed: failed to compile Node.js app
+2014-09-18T19:29:15+00:00 heroku[slug-compiler]: Slug compilation started
+2014-09-18T19:29:37.872835+00:00 heroku[api]: Deploy 7ae42ac by magnusbj@gmail.com
+2014-09-18T19:29:37.872913+00:00 heroku[api]: Release v10 created by magnusbj@gmail.com
+2014-09-18T19:29:38+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-09-18T19:29:40.346299+00:00 heroku[web.1]: State changed from down to starting
+2014-09-18T19:29:40.345774+00:00 heroku[web.1]: Unidling
+2014-09-18T19:29:43.858300+00:00 heroku[web.1]: Starting process with command `node app.js`
+2014-09-18T19:30:44.069616+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2014-09-18T19:30:44.069825+00:00 heroku[web.1]: Stopping process with SIGKILL
+2014-09-18T19:30:44.826646+00:00 heroku[web.1]: Process exited with status 137
+2014-09-18T19:30:44.843609+00:00 heroku[web.1]: State changed from crashed to starting
+2014-09-18T19:30:44.843001+00:00 heroku[web.1]: State changed from starting to crashed
+2014-09-18T19:30:47.937569+00:00 heroku[web.1]: Starting process with command `node app.js`
+2014-09-18T19:30:55.489296+00:00 heroku[router]: at=error code=H20 desc="App boot timeout" method=GET path="/" host=magnusbj-s-compositedrilling.herokuapp.com request_id=be73c44d-30e5-4d88-9de4-9a10a2295b4d fwd="54.87.128.104" dyno= connect= service= status=503 bytes=
+2014-09-18T19:31:17.457270+00:00 heroku[router]: at=error code=H20 desc="App boot timeout" method=GET path="/" host=magnusbj-s-compositedrilling.herokuapp.com request_id=c89d7c5c-b9c2-4846-aa8f-59d69bb57e31 fwd="85.200.5.102" dyno= connect= service= status=503 bytes=
+2014-09-18T19:31:48.323981+00:00 heroku[web.1]: Stopping process with SIGKILL
+2014-09-18T19:31:48.323730+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2014-09-18T19:31:49.149370+00:00 heroku[web.1]: State changed from starting to crashed
+2014-09-18T19:31:49.133298+00:00 heroku[web.1]: Process exited with status 137
+2014-09-18T19:31:51.143325+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=magnusbj-s-compositedrilling.herokuapp.com request_id=3a08b79e-0fc9-47f3-a616-2fcdd64a544f fwd="85.200.5.102" dyno= connect= service= status=503 bytes=
+2014-09-18T19:31:55.423052+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=magnusbj-s-compositedrilling.herokuapp.com request_id=c6188915-2cbe-4a64-b95b-5b1fffba8238 fwd="85.200.5.102" dyno= connect= service= status=503 bytes=

@@ -7,15 +7,16 @@ var express = require('express');
 var fs = require('fs');
 var json = require('express-json');
 var app = express();
-//var bodyParser = require('body-parser');
+
 //app.set('views', __dirname + '/views/')
 app.set('views', __dirname + '/jumbo/')
-//app.use(bodyParser.json());
+app.use(express.static(__dirname + '/jumbo/'));
+
 app.set('view engine', 'ejs');
 app.set('port', process.env.PORT || 8080);
 
 
-app.locals.title= 'Welcommings';
+app.locals.title= 'Progressive Drilling and Well solutions';
 app.use(json());
 
 // function skrivNoeTull(tull) {}
@@ -24,23 +25,23 @@ app.use(json());
 
 app.all('/post/jsondemo', function(req, res, next){
  fs.readFile('posts.json', function(err, data){
-
-//    fs.readFile('./texts/stories.json', function(err, data){
-	var posts = data;
-	console.log("raw data: " + posts);
-	console.log("JSON data: " + JSON.parse(posts));
-	var parsed = JSON.parse(posts);
-        parsed.forEach(function(post){
-        // for (var post in parsed) {
-	    console.log("slug : " + post + " " + post.slug);
-        });
-        console.log("length: " + parsed.length);
-         console.log("raw foreach: " + parsed[0].slug);
-	    console.log("JSON foreach: " + json(JSON.parse(posts)).slug);
-        res.send(posts);
-//})
-;
-
+     var posts = data;
+     var parsed = JSON.parse(posts);
+     var title ='';
+     var slug = '';
+     var content = '';
+     var i = 0;
+     parsed.forEach(function(post) {
+	 title[i] = post.title;
+	 slug[i] = post.slug;
+	 content[i] = post.content;
+	 console.log("title: " + i + " " + post.title);
+	 console.log("slug: " + i + " " + post.slug);
+	 console.log("content: " + i + " " + post.content);
+	 i++;
+     });
+//     res.render('index.ejs', {headline: 'Composite Drilling', content1: 'ok, let us just try harder', title, slug, content}
+// Add a function in the ejs that asks for the given title, slug and heading, like the example from hack sparrow.
     next();
   });
 });

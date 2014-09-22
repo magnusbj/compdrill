@@ -7,6 +7,7 @@ var express = require('express');
 var fs = require('fs');
 var json = require('express-json');
 var app = express();
+var loadPosts = express.Router();
 
 //app.set('views', __dirname + '/views/')
 app.set('views', __dirname + '/jumbo/')
@@ -19,36 +20,40 @@ app.set('port', process.env.PORT || 8080);
 app.locals.title= 'Progressive Drilling and Well solutions';
 app.use(json());
 
+app.use('/input', loadPosts);
+
 // function skrivNoeTull(tull) {}
 // var skrivNoeTull = function(tull) {console.log(tull);}
 // skivNoeTull("tull");
 
-app.all('/post/jsondemo', function(req, res, next){
- fs.readFile('posts.json', function(err, data){
-     var posts = data;
-     var parsed = JSON.parse(posts);
-     var title ='';
-     var slug = '';
-     var content = '';
-     var i = 0;
-     parsed.forEach(function(post) {
-	 title[i] = post.title;
-	 slug[i] = post.slug;
-	 content[i] = post.content;
-	 console.log("title: " + i + " " + post.title);
-	 console.log("slug: " + i + " " + post.slug);
-	 console.log("content: " + i + " " + post.content);
-	 i++;
-     });
-//     res.render('index.ejs', {headline: 'Composite Drilling', content1: 'ok, let us just try harder', title, slug, content}
-// Add a function in the ejs that asks for the given title, slug and heading, like the example from hack sparrow.
+loadPosts.use(function(req, res, next){
+    fs.readFile('./texts/stories.json', function(err, data){
+	var posts = data;
+	var parsed = JSON.parse(posts);
+	var title =[];
+	var slug = [];
+	var content = [];
+	var i = 0;
+	parsed.forEach(function(post) {
+	    title[i] = post.title;
+	    slug[i] = post.slug;
+	    content[i] = post.content;
+//	    console.log("title: " + i + " " + post.title);
+//	    console.log("slug: " + i + " " + post.slug);
+//	    console.log("content: " + i + " " + post.content);
+	    i++;
+	});
+	console.log("Posts loaded into title, slug and content");
+	console.log(title.length);
+	res.render('index.ejs', {headline: "Newface", content1: "example. need to load file", postlength: title.length, posttitle: title, postslug: slug, postcontent: content});
+
     next();
   });
 });
 
 app.get('/', function(request, response){
     fs.readFile('./texts/slogan.txt', function (err, data){
-    response.render('index.ejs', { headline: 'Composite Drilling', content1: data});
+    response.render('empty.ejs', { headline: 'Composite Drilling'});
     });
 });
 

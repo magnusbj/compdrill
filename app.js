@@ -20,13 +20,18 @@ app.set('port', process.env.PORT || 8080);
 app.locals.title= 'Progressive Drilling and Well solutions';
 app.use(json());
 
-app.use('/input', loadPosts);
+app.use('/', loadPosts);
 
 // function skrivNoeTull(tull) {}
 // var skrivNoeTull = function(tull) {console.log(tull);}
 // skivNoeTull("tull");
 
 loadPosts.use(function(req, res, next){
+    fs.readFile('./texts/slogan.txt', function (err, slogandata){
+	var slogan = slogandata;
+	req.slogan = slogan;
+	console.log("slogan loaded to req.slogan");
+	});
     fs.readFile('./texts/stories.json', function(err, data){
 	var posts = data;
 	var parsed = JSON.parse(posts);
@@ -44,14 +49,13 @@ loadPosts.use(function(req, res, next){
 	    i++;
 	});
 	console.log("Posts loaded into title, slug and content");
-	console.log(title.length);
-	res.render('index.ejs', {headline: "Newface", content1: "example. need to load file", postlength: title.length, posttitle: title, postslug: slug, postcontent: content});
+	res.render('index.ejs', {headline: "Newface", content1: "example. need to load file", postlength: title.length, posttitle: title, postslug: slug, postcontent: content, slogan: req.slogan});
 
     next();
   });
 });
 
-app.get('/', function(request, response){
+app.get('/empty', function(request, response){
     fs.readFile('./texts/slogan.txt', function (err, data){
     response.render('empty.ejs', { headline: 'Composite Drilling'});
     });

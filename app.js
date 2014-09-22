@@ -29,7 +29,7 @@ app.use('/', loadPosts);
 loadPosts.use(function(req, res, next){
     fs.readFile('./texts/slogan.txt', function (err, slogandata){
 	var slogan = slogandata;
-	req.slogan = slogan;
+	res.slogan = slogan;
 	console.log("slogan loaded to req.slogan");
 	});
     fs.readFile('./texts/stories.json', function(err, data){
@@ -43,13 +43,10 @@ loadPosts.use(function(req, res, next){
 	    title[i] = post.title;
 	    slug[i] = post.slug;
 	    content[i] = post.content;
-//	    console.log("title: " + i + " " + post.title);
-//	    console.log("slug: " + i + " " + post.slug);
-//	    console.log("content: " + i + " " + post.content);
 	    i++;
 	});
 	console.log("Posts loaded into title, slug and content");
-	res.render('index.ejs', {headline: "Newface", content1: "example. need to load file", postlength: title.length, posttitle: title, postslug: slug, postcontent: content, slogan: req.slogan});
+	res.render('index.ejs', {headline: "Newface", content1: "example. need to load file", postlength: title.length, posttitle: title, postslug: slug, postcontent: content, slogan: res.slogan});
 
     next();
   });

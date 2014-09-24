@@ -1,4 +1,5 @@
 Create general text that is added to html page with keyword
+       On carousel explain what is parameter control, what is the mechanical part of oil, what is geology. Explain carbon emissions with steel
 Use carousel from bootstrap
 Figure out how to change colors in bootstrap css
 Add contact, projectname

@@ -4,6 +4,18 @@ body {
   padding-bottom: 20px;
 }
 
+div.container-jumbo {
+    padding-left: 50px;
+  background-image:url(imgs/steel-and-warning-lights.jpg);
+  padding-right: 50px;
+
+
+}
+
+div.row {
+  background-image:url(imgs/feeling-left-out.jpg);
+}
+
 .navbar-inverse {
     background-color: #d7882e;
     border-color: #E7E7E7;
@@ -20,6 +32,7 @@ body {
 .navbar-default {
     background-color: #34cb38;
     border-color: #3da2b4;
+
 }
 .navbar-default .navbar-brand {
     color: #e3e3f9;

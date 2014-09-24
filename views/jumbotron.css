@@ -1,0 +1,92 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+div.container-jumbo {
+    padding-left: 50px;
+//  background-image:url(imgs/not-really-smoking.jpg);
+  padding-right: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+div.row {
+  background-image:url(imgs/feeling-left-out.jpg);
+  background-repeat: no-repeat;
+}
+
+.navbar-inverse {
+    background-color: #d7882e;
+    border-color: #E7E7E7;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: #777;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #5E5E5E;
+}
+
+.navbar-default {
+    background-color: #34cb38;
+    border-color: #3da2b4;
+
+}
+.navbar-default .navbar-brand {
+    color: #e3e3f9;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #2b22c4;
+}
+.navbar-default .navbar-text {
+    color: #e3e3f9;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #e3e3f9;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #2b22c4;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #2b22c4;
+    background-color: #3da2b4;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: #2b22c4;
+    background-color: #3da2b4;
+}
+.navbar-default .navbar-toggle {
+    border-color: #3da2b4;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #3da2b4;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #e3e3f9;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: #e3e3f9;
+}
+.navbar-default .navbar-link {
+    color: #e3e3f9;
+}
+.navbar-default .navbar-link:hover {
+    color: #2b22c4;
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+	color: #e3e3f9;
+	}
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+	color: #2b22c4;
+	}
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+	color: #2b22c4;
+	background-color: #3da2b4;
+	}
+}
